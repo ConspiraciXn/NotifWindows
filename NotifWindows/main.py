@@ -1,16 +1,12 @@
-# Librerias. ====================================================================
-import time
+# Librería.
 from win10toast import ToastNotifier
 
-# Constantes. ===================================================================
-TITULO = "¡Hola!"
-MENSAJE = "Bonita tarde <3"
-ICONO = "./finn.ico"
-DURACION = 10 #segs
+# Características notificación.
+TITULO = "¡Holaaa!"
+MENSAJE = "Que tengas una bonita tarde <3"
+ICONO = "./bruja.ico"
+DURACION = 5 #segs
 
-# Objeto Notificacion. ==========================================================
+# Crear y mostrar notificación.
 notificacion = ToastNotifier()
 notificacion.show_toast(title=TITULO, msg=MENSAJE, icon_path=ICONO, duration=DURACION)
-
-# Esperar notificaciones en hilo. ================================================
-while notificacion.notification_active(): time.sleep(0.1)
